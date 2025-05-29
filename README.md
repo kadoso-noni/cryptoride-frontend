@@ -1,4 +1,4 @@
-# crytoRide-frontend
+# CrytoRide-frontend
 
 # 🚗 CryptoRide
 

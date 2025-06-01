@@ -75,7 +75,7 @@ export const HowItWorks = () => {
         </div>
 
         {/* Steps */}
-        <div className="mx-auto mt-12 flex flex-col gap-6 px-4 text-left sm:px-0 md:max-w-2xl lg:max-w-3xl">
+        <div className="mx-auto mt-12 font-inter flex flex-col gap-6 px-4 text-left sm:px-0 md:max-w-2xl lg:max-w-3xl">
           {steps[activeTab].map((step, index) => (
             <div key={index} className="flex items-start gap-4">
               <div className="mt-1 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#22C55E] text-sm font-bold text-white">

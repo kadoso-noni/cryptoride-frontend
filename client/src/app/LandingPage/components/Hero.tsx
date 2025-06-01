@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { NavBar } from "./Navbar";
 import Image from "next/image";
 import { CarTaxiFront } from "lucide-react";
@@ -11,7 +11,7 @@ export const Hero = () => {
       <NavBar />
       <div className="container mx-auto mt-20 flex flex-col items-center gap-6 px-10">
         <div className="flex flex-col items-center text-center">
-          <p className="text-white font-manrope text-3xl font-extrabold sm:text-4xl md:text-6xl lg:text-[5.5rem]">
+          <p className="font-manrope text-3xl font-extrabold text-white sm:text-4xl md:text-6xl lg:text-[5.5rem]">
             Ride-Sharing on
           </p>
           <p className="mt-5 font-manrope text-3xl font-extrabold text-[#D7C5FF] sm:text-4xl md:text-6xl lg:text-[5.5rem]">
@@ -24,43 +24,49 @@ export const Hero = () => {
             platform.
           </p>
           <div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-8">
-            <button className="hover:bg-black bg-white mt-8 flex cursor-pointer items-center gap-3 rounded-[624.9375rem]  px-6 py-3 text-base font-bold transition-colors md:mt-10 md:px-8 md:py-4">
+            <button className="mt-8 flex cursor-pointer items-center gap-3 rounded-[624.9375rem] bg-white px-6 py-3 text-base font-bold transition-colors hover:bg-black md:mt-10 md:px-8 md:py-4">
               <CarTaxiFront />
               <span className="text-center font-medium text-[#06050A]">
                 Become a driver
               </span>
             </button>
-            <button className="hover:bg-black mt-8 flex cursor-pointer items-center gap-3 rounded-[624.9375rem]  bg-[#0A0813] px-6 py-3 text-base font-bold transition-colors md:mt-10 md:px-8 md:py-4">
+            <button className="mt-8 flex cursor-pointer items-center gap-3 rounded-[624.9375rem] bg-[#0A0813] px-6 py-3 text-base font-bold transition-colors hover:bg-black md:mt-10 md:px-8 md:py-4">
               <RaiseHand />
-              <span className="text-white text-center font-medium">
+              <span className="text-center font-medium text-white">
                 Book a ride
               </span>
             </button>
           </div>
         </div>
-        <div className="relative mx-auto mt-6">
-          <Image
-            src="/order.png"
-            alt="order mockup"
-            width={700}
-            height={1000}
-            className="h-auto w-full"
-            priority
-          />
-        </div>
-        <h2 className="text-white text-center font-manrope text-3xl font-bold sm:text-4xl md:text-6xl">
+
+       <div className="relative inline-block rounded-[2.5rem] bg-border-gradient p-[1px]">
+  <div className="relative z-10 rounded-[2.5rem] ">
+    <Image
+      src="/order.png"
+      alt="order mockup"
+      width={700}
+      height={1000}
+      className="h-auto w-full rounded-[2.5rem]"
+      priority
+    />
+  </div>
+</div>
+
+        
+
+        <h2 className="text-center font-manrope text-3xl font-bold text-white sm:text-4xl md:text-6xl">
           Pay for your ride in over 20+ cryptocurrency
         </h2>
 
-        <p className="text-white text-center font-manrope text-lg sm:text-xl md:text-[1.375rem]">
+        <p className="text-center font-manrope text-lg text-white sm:text-xl md:text-[1.375rem]">
           Stark, Bitcoin, Ethereum, USDT, Solana and more…
         </p>
-        <button className="text-white mt-6 rounded-[624.9375rem] bg-purpleLight px-[3.8125rem] py-[0.875rem] text-center font-medium">
+        <button className="mt-6 rounded-[624.9375rem] bg-purpleLight px-[3.8125rem] py-[0.875rem] text-center font-medium text-white">
           Get Started
         </button>
-        <div className="relative w-full overflow-hidden mb-10">
-          <div className="to-transparent pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#06050A]" />
-          <div className="to-transparent pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[#06050A]" />
+        <div className="relative mb-10 w-full overflow-hidden">
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#06050A] to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[#06050A] to-transparent" />
 
           <motion.div
             initial={{ x: 0 }}

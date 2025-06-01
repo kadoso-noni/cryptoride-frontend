@@ -21,6 +21,10 @@ module.exports = {
         indigo: "#291769",
         green: "#22C55E",
       },
+
+       backgroundImage: {
+        'border-gradient': 'linear-gradient(90deg, rgba(177, 157, 255, 0.00) 0%, #B19DFF 50%, rgba(177, 157, 255, 0.00) 100%)',
+      },
     },
   },
   plugins: [],

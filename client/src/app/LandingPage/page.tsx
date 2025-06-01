@@ -1,6 +1,7 @@
 
 import { Hero } from "./components/Hero";
 import { WhyChooseUs } from "./components/WhyChoosUs";
+import { HowItWorks } from "./components/HowItWorks";
 
 export default function LandingPage() {
   return (
@@ -8,6 +9,7 @@ export default function LandingPage() {
         <main>
             <Hero />
             <WhyChooseUs />
+            <HowItWorks />
         </main>
     </div>
   );

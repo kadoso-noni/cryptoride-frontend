@@ -12,10 +12,10 @@ export const Hero = () => {
         <NavBar />
         <div className="container mx-auto mt-20 flex flex-col items-center gap-6 px-10">
           <div className="flex flex-col items-center text-center">
-            <p className="font-manrope text-3xl font-extrabold text-white sm:text-4xl md:text-6xl lg:text-[5.5rem]">
+            <p className="font-manrope text-3xl font-extrabold text-white sm:text-5xl md:text-6xl lg:text-[5.5rem]">
               Ride-Sharing on
             </p>
-            <p className="mt-5 font-manrope text-3xl font-extrabold text-[#D7C5FF] sm:text-4xl md:text-6xl lg:text-[5.5rem]">
+            <p className="mt-5 font-manrope text-3xl font-extrabold text-[#D7C5FF] sm:text-5xl md:text-6xl lg:text-[5.5rem]">
               Starknet
             </p>
 
@@ -50,61 +50,57 @@ export const Hero = () => {
                 className="h-auto w-full rounded-[2.5rem]"
                 priority
               />
-              
             </div>
           </div>
         </div>
       </section>
- 
 
-      <section className="h-auto w-full bg-gradient-to-t from-[#06050A] from-[70%] to-[#06050A]/0 ">
+      <section className="h-auto w-full bg-gradient-to-t from-[#06050A] from-[70%] to-[#06050A]/0">
+        <div className="bg-gradient-to-b from-[#06050A] via-[#06050A] via-20% to-[#06050A]/0 p-10">
+          <div className="px-15 container mx-auto flex flex-col gap-10">
+            <h2 className="text-center font-manrope text-3xl font-bold leading-10 text-white sm:text-5xl md:text-6xl">
+              Pay for your ride in over 20+ cryptocurrency
+            </h2>
 
-        <div className=" bg-gradient-to-b from-[#06050A] via-[#06050A] via-20% to-[#06050A]/0 p-10">
-        <div className="container mx-auto px-15 flex flex-col gap-10">
- <h2 className="text-center font-manrope leading-10 text-3xl font-bold text-white sm:text-4xl md:text-6xl">
-            Pay for your ride in over 20+ cryptocurrency
-          </h2>
+            <p className="text-center font-manrope text-lg text-white sm:text-xl md:text-[1.375rem]">
+              Stark, Bitcoin, Ethereum, USDT, Solana and more…
+            </p>
+            <button className="mx-auto mt-6 w-fit rounded-[624.9375rem] bg-purpleLight px-[3.8125rem] py-[0.875rem] text-center font-medium text-white">
+              Get Started
+            </button>
+            <div className="relative mb-10 w-full overflow-hidden">
+              <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#06050A] to-transparent" />
+              <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[#06050A] to-transparent" />
 
-          <p className="text-center font-manrope text-lg text-white sm:text-xl md:text-[1.375rem]">
-            Stark, Bitcoin, Ethereum, USDT, Solana and more…
-          </p>
-          <button className="mt-6 w-fit mx-auto rounded-[624.9375rem] bg-purpleLight px-[3.8125rem] py-[0.875rem] text-center font-medium text-white">
-            Get Started
-          </button>
-          <div className="relative mb-10 w-full overflow-hidden">
-            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#06050A] to-transparent" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[#06050A] to-transparent" />
-
-            <motion.div
-              initial={{ x: 0 }}
-              animate={{ x: ["0%", "-50%"] }}
-              transition={{
-                repeat: Infinity,
-                duration: 30,
-                ease: "linear",
-              }}
-              className="flex w-max"
-            >
-              <Image
-                src="/infinityscrolicons.png"
-                alt="crypto icons"
-                width={1700}
-                height={200}
-                className="h-auto w-[1700px]"
-                priority
-              />
-              <Image
-                src="/infinityscrolicons.png"
-                alt="crypto icons"
-                width={1700}
-                height={200}
-                className="h-auto w-[1700px]"
-                priority
-              />
-            </motion.div>
+              <motion.div
+                initial={{ x: 0 }}
+                animate={{ x: ["0%", "-50%"] }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 30,
+                  ease: "linear",
+                }}
+                className="flex w-max"
+              >
+                <Image
+                  src="/infinityscrolicons.png"
+                  alt="crypto icons"
+                  width={1700}
+                  height={200}
+                  className="h-auto w-[1700px]"
+                  priority
+                />
+                <Image
+                  src="/infinityscrolicons.png"
+                  alt="crypto icons"
+                  width={1700}
+                  height={200}
+                  className="h-auto w-[1700px]"
+                  priority
+                />
+              </motion.div>
+            </div>
           </div>
-        </div>
-         
         </div>
       </section>
     </>

@@ -48,24 +48,15 @@ export const NavBar = () => {
         className={`transition-all font-inter mt-3 duration-300 ease-in-out lg:hidden ${isOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}
       >
         <ul className="flex flex-col text-white items-center  gap-4 border border-black p-4 pb-4">
-          <Link href="#">About</Link>
-          <Link href="#" className="flex items-center gap-1">
+          <Link href="#why-choose-us">About</Link>
+          <Link href="#how-it-works" className="flex items-center gap-1">
             <span>Services</span>
-            <button>
-              <ChevronDown />
-            </button>
           </Link>
-          <Link href="#" className="flex items-center gap-1">
-            <span>About</span>
-            <button>
-              <ChevronDown />
-            </button>
+          <Link href="#get-started" className="flex items-center gap-1">
+            <span>Get Started</span>
           </Link>
-          <Link href="#" className="flex items-center gap-1">
-            <span>About</span>
-            <button>
-              <ChevronDown />
-            </button>
+          <Link href="#contact" className="flex items-center gap-1">
+            <span>Contact</span>
           </Link>
           <button className="text-white hover:bg-black hover:text-white flex cursor-pointer items-center gap-1 rounded-[1.25rem] bg-purpleDark px-8 py-4 text-center text-base font-semibold lg:flex">
             <Wallet />

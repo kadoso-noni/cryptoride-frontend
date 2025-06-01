@@ -25,7 +25,7 @@ export const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="h-auto min-h-screen w-full bg-black bg-[url('/moon-bg.png')] bg-cover bg-center bg-no-repeat font-manrope">
+    <section className="h-auto min-h-screen w-full bg-black bg-[url('/moon-bg.png')] bg-cover bg-center bg-no-repeat font-manrope" id="why-choose-us">
       <div className="container mx-auto flex flex-col gap-6 px-6 py-20">
         <h2 className="text-center text-3xl font-extrabold text-white sm:text-5xl md:text-6xl lg:text-[5.5rem]">
           Why Choose Us?

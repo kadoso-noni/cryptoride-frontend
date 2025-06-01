@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export const Hero = () => {
   return (
     <>
-      <section className="relative h-auto min-h-screen w-full bg-black bg-[url('/bg-hero.png')] bg-cover bg-center bg-no-repeat">
+      <section className="relative h-auto min-h-screen w-full bg-black bg-[url('/bg-hero.png')] bg-cover bg-center bg-no-repeat" id="home">
         <NavBar />
         <div className="container mx-auto mt-20 flex flex-col items-center gap-6 px-10">
           <div className="flex flex-col items-center text-center">
@@ -25,15 +25,15 @@ export const Hero = () => {
               platform.
             </p>
             <div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-8">
-              <button className="mt-8 flex cursor-pointer items-center gap-3 rounded-[624.9375rem] bg-white px-6 py-3 text-base font-bold transition-colors hover:bg-black md:mt-10 md:px-8 md:py-4">
+              <button className="mt-8 flex cursor-pointer items-center gap-3 rounded-[624.9375rem] bg-white px-6 py-3 text-base font-bold transition-colors hover:bg-purpleDark hover:text-white md:mt-10 md:px-8 md:py-4">
                 <CarTaxiFront />
-                <span className="text-center font-medium text-[#06050A]">
+                <span className="text-center font-medium ">
                   Become a driver
                 </span>
               </button>
-              <button className="mt-8 flex cursor-pointer items-center gap-3 rounded-[624.9375rem] bg-[#0A0813] px-6 py-3 text-base font-bold transition-colors hover:bg-black md:mt-10 md:px-8 md:py-4">
+              <button className="mt-8 flex cursor-pointer items-center gap-3 rounded-[624.9375rem] bg-[#0A0813] px-6 py-3 text-base font-bold transition-colors text-white hover:bg-green  md:mt-10 md:px-8 md:py-4">
                 <RaiseHand />
-                <span className="text-center font-medium text-white">
+                <span className="text-center font-medium">
                   Book a ride
                 </span>
               </button>

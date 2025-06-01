@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const steps = {
   passenger: [
@@ -44,7 +45,7 @@ export const HowItWorks = () => {
   const [activeTab, setActiveTab] = useState("passenger");
 
   return (
-    <section className="w-full bg-white px-4 py-20 font-manrope">
+    <section className="w-full bg-white px-4 py-20 font-manrope" id="how-it-works">
       <div className="container mx-auto max-w-6xl text-center">
         <h2 className="text-3xl font-extrabold leading-tight text-[#291769] sm:text-5xl md:text-6xl lg:text-[5.5rem]">
           How It Works
@@ -74,23 +75,34 @@ export const HowItWorks = () => {
           </button>
         </div>
 
-        {/* Steps */}
+        {/* Animated Steps */}
         <div className="mx-auto mt-12 font-inter flex flex-col gap-6 px-4 text-left sm:px-0 md:max-w-2xl lg:max-w-3xl">
-          {steps[activeTab].map((step, index) => (
-            <div key={index} className="flex items-start gap-4">
-              <div className="mt-1 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#22C55E] text-sm font-bold text-white">
-                {index + 1}
-              </div>
-              <div>
-                <p className="text-base font-semibold text-[#0A0A0A] sm:text-lg">
-                  {step.title}
-                </p>
-                <p className="mt-1 text-sm text-[#4B5563] sm:text-base">
-                  {step.desc}
-                </p>
-              </div>
-            </div>
-          ))}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4 }}
+              className="space-y-6"
+            >
+              {steps[activeTab].map((step, index) => (
+                <div key={index} className="flex items-start gap-4">
+                  <div className="mt-1 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#22C55E] text-sm font-bold text-white">
+                    {index + 1}
+                  </div>
+                  <div>
+                    <p className="text-base font-semibold text-[#0A0A0A] sm:text-lg">
+                      {step.title}
+                    </p>
+                    <p className="mt-1 text-sm text-[#4B5563] sm:text-base">
+                      {step.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </section>

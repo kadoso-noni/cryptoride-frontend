@@ -4,7 +4,7 @@ import { Car } from "lucide-react";
 
 export const GetStarted = () => {
   return (
-    <section
+    <section id="get-started"
       className="py-20 font-inter"
       style={{
         backgroundImage: "linear-gradient(180deg, #111827 0%, #1F2937 100%)",

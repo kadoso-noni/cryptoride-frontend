@@ -25,24 +25,15 @@ export const NavBar = () => {
 
         {/* Desktop Link */}
         <ul className="text-white font-inter hidden items-center gap-8 text-base lg:flex">
-          <Link href="#">About</Link>
-          <Link href="#" className="flex items-center gap-1">
+          <Link href="#why-choose-us">About</Link>
+          <Link href="#how-it-works" className="flex items-center gap-1">
             <span>Services</span>
-            <button>
-              <ChevronDown />
-            </button>
           </Link>
-          <Link href="#" className="flex items-center gap-1">
-            <span>About</span>
-            <button>
-              <ChevronDown />
-            </button>
+          <Link href="#get-started" className="flex items-center gap-1">
+            <span>Get Started</span>
           </Link>
-          <Link href="#" className="flex items-center gap-1">
-            <span>About</span>
-            <button>
-              <ChevronDown />
-            </button>
+          <Link href="#contact" className="flex items-center gap-1">
+            <span>Contact</span>
           </Link>
         </ul>
 

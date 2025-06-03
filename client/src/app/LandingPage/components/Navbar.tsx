@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useState } from "react";
-import { Menu, X, Car, ChevronDown, Wallet } from "lucide-react";
+import { Menu, X, Car, Wallet } from "lucide-react";
 import Link from "next/link";
 
 export const NavBar = () => {

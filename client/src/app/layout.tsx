@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import {
-  Geist,
-  Geist_Mono,
   Inter,
   Manrope,
   Archivo_Black,
@@ -9,10 +7,7 @@ import {
 
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,10 +24,7 @@ const archivo = Archivo_Black({
   variable: "--font-archivo",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",

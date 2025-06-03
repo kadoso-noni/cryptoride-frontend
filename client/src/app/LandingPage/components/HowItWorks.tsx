@@ -2,7 +2,14 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const steps = {
+type TabType = 'passenger' | 'driver';
+
+interface Step {
+  title: string;
+  desc: string;
+}
+
+const steps: Record<TabType, Step[]> = {
   passenger: [
     {
       title: "Connect Your Wallet",
@@ -42,7 +49,7 @@ const steps = {
 };
 
 export const HowItWorks = () => {
-  const [activeTab, setActiveTab] = useState("passenger");
+  const [activeTab, setActiveTab] = useState<TabType>("passenger");
 
   return (
     <section className="w-full bg-white px-4 py-20 font-manrope" id="how-it-works">
